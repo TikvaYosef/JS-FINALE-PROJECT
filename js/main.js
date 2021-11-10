@@ -10,6 +10,6 @@ function printname() {
             clearInterval(timer)
         }
 
-    }, 250)
+    }, 100)
 }
 printname()

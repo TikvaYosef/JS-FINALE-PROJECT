@@ -42,9 +42,12 @@ a:link, a:visited {
 } 
   
 #table {
-    width: 100%;
+    width: 50%;
     border-collapse: collapse;
     /* padding: 0%; */
+}
+td{
+    width: 50%;
 }
 
 

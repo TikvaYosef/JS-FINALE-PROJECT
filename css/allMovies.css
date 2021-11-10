@@ -65,14 +65,14 @@ a:link, a:visited {
 }
 .card{
     width: 350px;
-     height: 400px;
-     border-radius: 100px;
-    margin-top: 20px;
-    /* background-color: white; */
+    height: 400px;
+    border-radius: 100px;
+    margin-top: 40px;
    
 }
 .card:hover{
     opacity: 0.3; 
+    
     
 }
 
@@ -95,6 +95,18 @@ a:link, a:visited {
     height: 200px;
 }
 
+.btnDelete{
+    /* height: 50px;
+    width: 50px; */
+    border-radius: 10px ;
+    margin-left: 150px;
+}
+.deleteImg{
+    border-radius: 20px;
+
+
+}
+
 #footerLi{
     display: flex;
     flex-wrap: wrap;
@@ -102,13 +114,17 @@ a:link, a:visited {
     justify-content: space-around;
     
 }
-
+#hr{
+    margin-top: 200px;
+}
 
 footer{
+    
     direction: rtl;
     background-color: black;
     color:white;
     width: 97vw;
+    margin-top: 200px;
 }
 
 footer a img{
@@ -118,3 +134,4 @@ footer a img{
     margin-left: 100px;
     border-radius: 200px;
 }
+

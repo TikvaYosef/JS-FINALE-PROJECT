@@ -16,8 +16,10 @@ body{
 h1{
  text-align:  center;
  margin-top: 100px;
+margin-left: 100px;
  font-family: 'Mochiy Pop One', sans-serif;
 }
+
 
 #ul{
     display: flex;

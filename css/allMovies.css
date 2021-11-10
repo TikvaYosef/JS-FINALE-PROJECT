@@ -1,0 +1,120 @@
+body{
+    background-color: black;
+}
+#logoTech{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    
+}
+#logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px; 
+}
+
+#navBar{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-around;
+}
+.liNavBar{
+    
+    font-family:'Mochiy Pop One', sans-serif ;
+    color: white;
+    box-shadow: turquoise 4px 4px 4px 4px ;
+}
+a:link, a:visited {
+    color: white;
+    text-decoration-line: none;
+}
+
+.imgMovies{
+   
+    width: 280px;
+    height: 300px;
+    border-radius: 100px;
+   margin-left: 40px;
+   border: solid black 2px;
+    
+}
+#inpBtn{
+    text-align: center;
+    
+    
+    
+}
+#inp{
+    width: 500px;
+    height: 40px;
+    border-radius: 100px; 
+}
+#btn{
+    font-family: 'Mochiy Pop One', sans-serif ;
+    border-radius: 20px;
+    font-weight: bolder;
+    height: 40px;
+    width: 100px;
+}
+#allMoviesDiv{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card{
+    width: 350px;
+     height: 400px;
+     border-radius: 100px;
+    margin-top: 20px;
+    /* background-color: white; */
+   
+}
+.card:hover{
+    opacity: 0.3; 
+    
+}
+
+.title{
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+.rating{
+    color:  white;
+    text-align: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+
+
+#imageOfInp{
+    width: 97vw;
+    height: 200px;
+}
+
+#footerLi{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-around;
+    
+}
+
+
+footer{
+    direction: rtl;
+    background-color: black;
+    color:white;
+    width: 97vw;
+}
+
+footer a img{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 100px;
+    border-radius: 200px;
+}

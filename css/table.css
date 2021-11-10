@@ -1,0 +1,76 @@
+body{
+    background-color: black;
+}
+
+#logoTech{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    
+}
+#logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px; 
+}
+
+#ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-around;
+}
+.liNavBar{
+    
+    font-family:'Mochiy Pop One', sans-serif ;
+    color: white;
+    box-shadow: turquoise 4px 4px 4px 4px ;
+}
+a:link, a:visited {
+    color: white;
+    text-decoration-line: none;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+} 
+
+#table, td, th {
+    border: 1px solid white;
+    color: white;
+} 
+  
+#table {
+    width: 100%;
+    border-collapse: collapse;
+    /* padding: 0%; */
+}
+
+
+#footerLi{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-around;
+    
+}
+
+footer{
+    direction: rtl;
+    /* background-color: black; */
+    color:white;
+    width: 97vw; 
+} 
+footer a img{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 85px;
+    margin-right: 100px;
+    border-radius: 200px;
+}
+
+  
+
+

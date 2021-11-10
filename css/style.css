@@ -1,0 +1,64 @@
+
+body{
+    background-image: url("https://media.istockphoto.com/photos/empty-cinema-hall-view-of-empty-white-cinema-screen-from-the-upper-picture-id1280325563?b=1&k=20&m=1280325563&s=170667a&w=0&h=4iLWblh-CUVAWh_-om1kTkf0YPgc6FRvKRHow8CGaBs=");
+    background-size: cover;
+}
+#logoTech{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+#logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px; 
+}
+h1{
+ text-align:  center;
+ margin-top: 100px;
+ font-family: 'Mochiy Pop One', sans-serif;
+}
+
+#ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-around;
+}
+.liNavBar{
+    
+    font-family:'Mochiy Pop One', sans-serif ;
+    color: white;
+    box-shadow: turquoise 4px 4px 4px 4px;
+}
+a:link, a:visited {
+    color: white;
+    text-decoration-line: none;
+}
+#forspace{
+    height: 90vh;
+}
+
+
+#footerLi{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-around;
+    
+}
+
+footer{
+    direction: rtl;
+    /* background-color: black; */
+    color:white;
+    width: 97vw; 
+} 
+footer a img{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 85px;
+    margin-right: 100px;
+    border-radius: 200px;
+}

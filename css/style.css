@@ -13,13 +13,13 @@ body{
     height: 50px;
     border-radius: 50px; 
 }
+
 h1{
  text-align:  center;
  margin-top: 100px;
-margin-left: 100px;
+ margin-left: 100px;
  font-family: 'Mochiy Pop One', sans-serif;
 }
-
 
 #ul{
     display: flex;
@@ -52,7 +52,6 @@ a:link, a:visited {
 
 footer{
     direction: rtl;
-    /* background-color: black; */
     color:white;
     width: 97vw; 
 } 
@@ -63,4 +62,12 @@ footer a img{
     margin-left: 85px;
     margin-right: 100px;
     border-radius: 200px;
+}
+
+@media only screen and (max-width: 425px) {
+    #welcome1{
+    color: red
+    }
+    
+
 }

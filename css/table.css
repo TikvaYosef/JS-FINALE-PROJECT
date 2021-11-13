@@ -39,16 +39,25 @@ a:link, a:visited {
 #table, td, th {
     border: 1px solid white;
     color: white;
-} 
+    width: 10px; 
+}  
   
 #table {
-    width: 50%;
-    border-collapse: collapse;
+    width: 100vw;
+    overflow: auto;
     /* padding: 0%; */
 }
 td{
-    width: 50%;
+   max-width: 20vw;
+   overflow-wrap: break-word;
+   overflow: auto;
 }
+#tableDiv{
+    max-width: 100vw;
+   overflow-wrap: break-word;
+   overflow: auto;   
+}
+
 
 
 #footerLi{

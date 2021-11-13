@@ -1,48 +1,69 @@
 
 
-class Movies{
+class Movie {
     movieName;
     rating;
     synopsis;
     image;
     linkToMovie;
-    constructor(movieName,rating,synopsis,image,linkToMovie){
+    constructor(movieName, rating, synopsis, image, linkToMovie) {
         this.movieName = movieName;
         this.rating = rating;
         this.synopsis = synopsis;
-        this.image = image; 
+        this.image = image;
         this.linkToMovie = linkToMovie;
     }
-    
 }
 
-// function addPic(imageInp) {
-//    ` <img src="${imageInp}" >`   
-// }
-
-
-
-btn.onclick=()=>{
-    let movie = new Movies(nameInp.value ,ratingInp.value ,synopsisInp.value ,imageInp.value,linkToMovieInp.value)
-    // addPic(imageInp.value)
-   
-    const option = {
-        method:"POST",
-        headers:{'Content-Type': 'application/json'},
-        body:JSON.stringify(movie),
+async function addToApi(api, option) {
+    try {
+        return await fetch(api, option)
+            .then(response => response.json())
     }
-    addToApi("https://moviesmern.herokuapp.com/movies/saveMovie",option)
-  
-    console.log(option)
-
-}
-async function addToApi(api,option) {
-    try{
-        return await fetch(api,option)
-    }
-    catch (error){
+    catch (error) {
         return error
 
     }
 }
+async function upDate(_id ,option) {
+    try{
+        return await fetch(api,option)
+        .then(response=>response.json())
+    }
+    catch{
+        return error;
+    }
+    
+}
+
+
+
+btn.onclick = () => {
+    let movie = new Movie(nameInp.value, ratingInp.value, synopsisInp.value, imageInp.value, linkToMovieInp.value)
+
+    let option = {
+        method: "POST",
+        body: JSON.stringify({ movie }),
+        headers: { 'Content-Type': 'application/json' },
+
+    }
+    addToApi("https://moviesmern.herokuapp.com/movies/saveMovie", option)
+
+    console.log(option)
+
+}
+
+btnUp.onclick = () => {
+    let movie = new Movie(nameInp.value, ratingInp.value, synopsisInp.value, imageInp.value, linkToMovieInp.value)
+
+    let option = {
+        method: "PUT",
+        body: JSON.stringify({ movie }),
+        headers: { 'Content-Type': 'application/json' },
+    }
+
+    upDate(`https://moviesmern.herokuapp.com/movies/movie/${_id}`, option)
+    console.log(option)
+}
+
 
